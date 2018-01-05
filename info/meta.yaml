@@ -1,0 +1,18 @@
+package:
+  name: mypkg
+  version: "0.0.1"
+
+source:
+  path: ..
+
+build:
+  script: $PYTHON setup.py install --single-version-externally-managed --record=record.txt
+
+requirements:
+  build: 
+    - python
+  run:
+    - python
+
+about:
+  summary: simple package with simple needs
